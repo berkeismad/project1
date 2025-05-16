@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>hehe</title>
+  <link rel="stylesheet" href="main.css" />
+</head>
+<body>
+  <div class="container">
+    <h1 class="header_text">Ben de öyle tahmin etmiştim hehe</h1>
+
+    <div class="video-wrapper">
+      <video controls autoplay loop src="/video.mp4" class="video-player"></video>
+
+      <div class="button-left">
+        <form action="https://formspree.io/f/xnnddwpq" method="POST" class="date-form">
+          <input type="date" id="datePicker" name="selectedDate" class="btn date-picker" onchange="toggleConfirmButton(this)">
+          <button type="submit" class="btn confirm-btn" id="confirmBtn" style="display: none;">Onayla</button>
+        </form>
+      </div>
+
+      <div class="button-right">
+        <button class="btn" onclick="history.back()">Geri Dön</button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function toggleConfirmButton(input) {
+      const btn = document.getElementById('confirmBtn');
+      if (input.value) {
+        btn.style.display = 'inline-block';
+      } else {
+        btn.style.display = 'none';
+      }
+    }
+  </script>
+</body>
+</html>

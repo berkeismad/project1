@@ -1,0 +1,110 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    background-image: url('/chatgpt.png');
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: sans-serif;
+    min-height: 100vh;
+
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding-top: 20px;
+    text-align: center;
+}
+
+.header_text {
+    font-size: 50px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+.video-wrapper {
+    position: relative;
+    display: inline-block;
+}
+
+.video-player {
+    max-width: 90vw;
+    height: auto;
+    border-radius: 10px;
+}
+
+.button-left {
+    position: absolute;
+    left: -10px;
+    bottom: -55px;
+    display: flex;
+    gap: 10px;
+}
+
+.button-right {
+    position: absolute;
+    right: -10px;
+    bottom: -55px;
+    
+}
+
+.date-form {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.btn, .date-picker {
+    background-color: #8400ff;
+    color: white;
+    padding: 12px 28px;
+    font-size: 16px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+@media (max-width: 768px) {
+    .header_text {
+        font-size: 28px;
+        padding: 0 10px;
+    }
+
+    .video-player {
+        width: 100%;
+        height: auto;
+    }
+
+    .button-left, .button-right {
+        position: static;
+        margin-top: 15px;
+        justify-content: center;
+        width: 100%;
+        display: flex;
+    }
+
+    .video-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .date-form {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .btn, .date-picker {
+        width: auto;
+        font-size: 14px;
+        padding: 10px 16px;
+    }
+}
