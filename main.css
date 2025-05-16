@@ -2,7 +2,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: #ffffff;
-    background-image: url('/chatgpt.png');
+    background-image: url('chatgpt.png');
     background-size: 100% 100%;
     background-position: center;
     background-repeat: no-repeat;
